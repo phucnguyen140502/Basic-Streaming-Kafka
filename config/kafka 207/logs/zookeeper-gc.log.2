@@ -1,0 +1,40 @@
+[2024-12-15T12:00:37.563+0700][gc] Using G1
+[2024-12-15T12:00:37.573+0700][gc,init] Version: 17.0.13+11-Ubuntu-2ubuntu122.04 (release)
+[2024-12-15T12:00:37.573+0700][gc,init] CPUs: 2 total, 2 available
+[2024-12-15T12:00:37.574+0700][gc,init] Memory: 3911M
+[2024-12-15T12:00:37.574+0700][gc,init] Large Page Support: Disabled
+[2024-12-15T12:00:37.574+0700][gc,init] NUMA Support: Disabled
+[2024-12-15T12:00:37.574+0700][gc,init] Compressed Oops: Enabled (32-bit)
+[2024-12-15T12:00:37.574+0700][gc,init] Heap Region Size: 1M
+[2024-12-15T12:00:37.574+0700][gc,init] Heap Min Capacity: 512M
+[2024-12-15T12:00:37.574+0700][gc,init] Heap Initial Capacity: 512M
+[2024-12-15T12:00:37.574+0700][gc,init] Heap Max Capacity: 512M
+[2024-12-15T12:00:37.574+0700][gc,init] Pre-touch: Disabled
+[2024-12-15T12:00:37.574+0700][gc,init] Parallel Workers: 2
+[2024-12-15T12:00:37.574+0700][gc,init] Concurrent Workers: 1
+[2024-12-15T12:00:37.574+0700][gc,init] Concurrent Refinement Workers: 2
+[2024-12-15T12:00:37.574+0700][gc,init] Periodic GC: Disabled
+[2024-12-15T12:00:37.642+0700][gc,metaspace] CDS archive(s) mapped at: [0x00007f1f0f000000-0x00007f1f0fbc9000-0x00007f1f0fbc9000), size 12357632, SharedBaseAddress: 0x00007f1f0f000000, ArchiveRelocationMode: 1.
+[2024-12-15T12:00:37.642+0700][gc,metaspace] Compressed class space mapped at: 0x00007f1f10000000-0x00007f1f50000000, reserved size: 1073741824
+[2024-12-15T12:00:37.642+0700][gc,metaspace] Narrow klass base: 0x00007f1f0f000000, Narrow klass shift: 0, Narrow klass range: 0x100000000
+[2024-12-15T12:45:38.419+0700][gc,start    ] GC(0) Pause Young (Normal) (G1 Evacuation Pause)
+[2024-12-15T12:45:38.420+0700][gc,task     ] GC(0) Using 2 workers of 2 for evacuation
+[2024-12-15T12:45:38.459+0700][gc,mmu      ] GC(0) MMU target violated: 21.0ms (20.0ms/21.0ms)
+[2024-12-15T12:45:38.459+0700][gc,phases   ] GC(0)   Pre Evacuate Collection Set: 1.7ms
+[2024-12-15T12:45:38.459+0700][gc,phases   ] GC(0)   Merge Heap Roots: 0.2ms
+[2024-12-15T12:45:38.459+0700][gc,phases   ] GC(0)   Evacuate Collection Set: 35.8ms
+[2024-12-15T12:45:38.459+0700][gc,phases   ] GC(0)   Post Evacuate Collection Set: 1.6ms
+[2024-12-15T12:45:38.459+0700][gc,phases   ] GC(0)   Other: 0.9ms
+[2024-12-15T12:45:38.459+0700][gc,heap     ] GC(0) Eden regions: 25->0(21)
+[2024-12-15T12:45:38.459+0700][gc,heap     ] GC(0) Survivor regions: 0->4(4)
+[2024-12-15T12:45:38.459+0700][gc,heap     ] GC(0) Old regions: 0->4
+[2024-12-15T12:45:38.459+0700][gc,heap     ] GC(0) Archive regions: 2->2
+[2024-12-15T12:45:38.459+0700][gc,heap     ] GC(0) Humongous regions: 0->0
+[2024-12-15T12:45:38.459+0700][gc,metaspace] GC(0) Metaspace: 7744K(7936K)->7744K(7936K) NonClass: 6876K(6976K)->6876K(6976K) Class: 868K(960K)->868K(960K)
+[2024-12-15T12:45:38.460+0700][gc          ] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 25M->8M(512M) 40.273ms
+[2024-12-15T12:45:38.460+0700][gc,cpu      ] GC(0) User=0.07s Sys=0.01s Real=0.04s
+[2024-12-15T12:45:38.465+0700][gc,heap,exit] Heap
+[2024-12-15T12:45:38.466+0700][gc,heap,exit]  garbage-first heap   total 524288K, used 9504K [0x00000000e0000000, 0x0000000100000000)
+[2024-12-15T12:45:38.466+0700][gc,heap,exit]   region size 1024K, 5 young (5120K), 4 survivors (4096K)
+[2024-12-15T12:45:38.466+0700][gc,heap,exit]  Metaspace       used 7745K, committed 7936K, reserved 1114112K
+[2024-12-15T12:45:38.466+0700][gc,heap,exit]   class space    used 868K, committed 960K, reserved 1048576K

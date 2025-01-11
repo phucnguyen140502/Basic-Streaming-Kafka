@@ -1,0 +1,2 @@
+[2024-12-18 19:46:26,767] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Session key updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2510)
+[2024-12-18 19:46:26,807] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Session key updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2510)

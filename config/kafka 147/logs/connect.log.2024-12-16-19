@@ -1,0 +1,717 @@
+[2024-12-16 19:09:19,593] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Session key updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2510)
+[2024-12-16 19:09:19,617] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Session key updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2510)
+[2024-12-16 19:33:20,056] INFO Successfully processed removal of connector 'mysql-sink-connector' (org.apache.kafka.connect.storage.KafkaConfigBackingStore:1005)
+[2024-12-16 19:33:20,058] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Connector mysql-sink-connector config removed (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2432)
+[2024-12-16 19:33:20,081] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:243)
+[2024-12-16 19:33:20,082] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] (Re-)joining group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:605)
+[2024-12-16 19:33:20,086] INFO 172.30.2.207 - - [16/Dec/2024:12:33:19 +0000] "DELETE /connectors/mysql-sink-connector HTTP/1.1" 204 0 "-" "curl/7.81.0" 88 (org.apache.kafka.connect.runtime.rest.RestServer:62)
+[2024-12-16 19:33:20,095] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully joined group with generation Generation{generationId=248, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:666)
+[2024-12-16 19:33:20,108] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully synced group in generation Generation{generationId=248, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:843)
+[2024-12-16 19:33:20,110] INFO [mysql-sink-connector|worker] Stopping connector mysql-sink-connector (org.apache.kafka.connect.runtime.Worker:452)
+[2024-12-16 19:33:20,111] INFO [mysql-sink-connector|worker] Scheduled shutdown for WorkerConnector{id=mysql-sink-connector} (org.apache.kafka.connect.runtime.WorkerConnector:295)
+[2024-12-16 19:33:20,110] WARN [mysql-sink-connector|task-0] Ignoring stop request for unowned task mysql-sink-connector-0 (org.apache.kafka.connect.runtime.Worker:1044)
+[2024-12-16 19:33:20,112] WARN [mysql-sink-connector|task-0] Ignoring await stop request for non-present task mysql-sink-connector-0 (org.apache.kafka.connect.runtime.Worker:1070)
+[2024-12-16 19:33:20,118] INFO [mysql-sink-connector|worker] Completed shutdown for WorkerConnector{id=mysql-sink-connector} (org.apache.kafka.connect.runtime.WorkerConnector:315)
+[2024-12-16 19:33:20,121] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished stopping tasks in preparation for rebalance (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2735)
+[2024-12-16 19:33:20,149] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished flushing status backing store in preparation for rebalance (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2756)
+[2024-12-16 19:33:20,150] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Joined group at generation 248 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', leaderUrl='http://172.30.2.147:8083/', offset=401, connectorIds=[mongodb-source-connector], taskIds=[mongodb-source-connector-0], revokedConnectorIds=[mysql-sink-connector], revokedTaskIds=[mysql-sink-connector-0], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2648)
+[2024-12-16 19:33:20,153] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting connectors and tasks using config offset 401 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1979)
+[2024-12-16 19:33:20,153] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2008)
+[2024-12-16 19:33:20,154] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:243)
+[2024-12-16 19:33:20,154] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] (Re-)joining group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:605)
+[2024-12-16 19:33:20,168] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully joined group with generation Generation{generationId=249, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:666)
+[2024-12-16 19:33:20,178] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully synced group in generation Generation{generationId=249, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:843)
+[2024-12-16 19:33:20,178] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Joined group at generation 249 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', leaderUrl='http://172.30.2.147:8083/', offset=401, connectorIds=[mongodb-source-connector], taskIds=[mongodb-source-connector-0], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2648)
+[2024-12-16 19:33:20,180] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting connectors and tasks using config offset 401 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1979)
+[2024-12-16 19:33:20,181] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2008)
+[2024-12-16 19:41:36,015] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Connector mysql-sink-connector config updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2448)
+[2024-12-16 19:41:36,021] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:243)
+[2024-12-16 19:41:36,023] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] (Re-)joining group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:605)
+[2024-12-16 19:41:36,032] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully joined group with generation Generation{generationId=250, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:666)
+[2024-12-16 19:41:36,043] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully synced group in generation Generation{generationId=250, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:843)
+[2024-12-16 19:41:36,044] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Joined group at generation 250 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', leaderUrl='http://172.30.2.147:8083/', offset=402, connectorIds=[mysql-sink-connector, mongodb-source-connector], taskIds=[mongodb-source-connector-0], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2648)
+[2024-12-16 19:41:36,045] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting connectors and tasks using config offset 402 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1979)
+[2024-12-16 19:41:36,046] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting connector mysql-sink-connector (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2097)
+[2024-12-16 19:41:36,048] INFO [mysql-sink-connector|worker] Creating connector mysql-sink-connector of type io.debezium.connector.jdbc.JdbcSinkConnector (org.apache.kafka.connect.runtime.Worker:313)
+[2024-12-16 19:41:36,052] INFO [mysql-sink-connector|worker] SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	name = mysql-sink-connector
+	predicates = []
+	tasks.max = 1
+	tasks.max.enforce = true
+	topics = [fullfillment.test.customers]
+	topics.regex = 
+	transforms = [unwrap]
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:371)
+[2024-12-16 19:41:36,061] INFO [mysql-sink-connector|worker] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	name = mysql-sink-connector
+	predicates = []
+	tasks.max = 1
+	tasks.max.enforce = true
+	topics = [fullfillment.test.customers]
+	topics.regex = 
+	transforms = [unwrap]
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = true
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field = 
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:371)
+[2024-12-16 19:41:36,064] INFO [mysql-sink-connector|worker] Instantiated connector mysql-sink-connector with version 3.0.4.Final of type class io.debezium.connector.jdbc.JdbcSinkConnector (org.apache.kafka.connect.runtime.Worker:335)
+[2024-12-16 19:41:36,065] INFO [mysql-sink-connector|worker] Finished creating connector mysql-sink-connector (org.apache.kafka.connect.runtime.Worker:356)
+[2024-12-16 19:41:36,066] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2008)
+[2024-12-16 19:41:36,090] INFO SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	name = mysql-sink-connector
+	predicates = []
+	tasks.max = 1
+	tasks.max.enforce = true
+	topics = [fullfillment.test.customers]
+	topics.regex = 
+	transforms = [unwrap]
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:371)
+[2024-12-16 19:41:36,094] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	name = mysql-sink-connector
+	predicates = []
+	tasks.max = 1
+	tasks.max.enforce = true
+	topics = [fullfillment.test.customers]
+	topics.regex = 
+	transforms = [unwrap]
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = true
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field = 
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:371)
+[2024-12-16 19:41:36,133] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Tasks [mysql-sink-connector-0] configs updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2467)
+[2024-12-16 19:41:36,138] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:243)
+[2024-12-16 19:41:36,139] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] (Re-)joining group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:605)
+[2024-12-16 19:41:36,140] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Tasks [] configs updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2467)
+[2024-12-16 19:41:36,146] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully joined group with generation Generation{generationId=251, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:666)
+[2024-12-16 19:41:36,157] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully synced group in generation Generation{generationId=251, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:843)
+[2024-12-16 19:41:36,158] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Joined group at generation 251 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', leaderUrl='http://172.30.2.147:8083/', offset=405, connectorIds=[mysql-sink-connector, mongodb-source-connector], taskIds=[mysql-sink-connector-0, mongodb-source-connector-0], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2648)
+[2024-12-16 19:41:36,159] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting connectors and tasks using config offset 405 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1979)
+[2024-12-16 19:41:36,160] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting task mysql-sink-connector-0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2022)
+[2024-12-16 19:41:36,161] INFO [mysql-sink-connector|task-0] Creating task mysql-sink-connector-0 (org.apache.kafka.connect.runtime.Worker:646)
+[2024-12-16 19:41:36,163] INFO [mysql-sink-connector|task-0] ConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.jdbc.JdbcSinkConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	name = mysql-sink-connector
+	predicates = []
+	tasks.max = 1
+	tasks.max.enforce = true
+	transforms = [unwrap]
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.ConnectorConfig:371)
+[2024-12-16 19:41:36,167] INFO [mysql-sink-connector|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.jdbc.JdbcSinkConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	name = mysql-sink-connector
+	predicates = []
+	tasks.max = 1
+	tasks.max.enforce = true
+	transforms = [unwrap]
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = true
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field = 
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:371)
+[2024-12-16 19:41:36,173] ERROR [mysql-sink-connector|task-0] Failed to start task mysql-sink-connector-0 (org.apache.kafka.connect.runtime.Worker:707)
+java.lang.NoClassDefFoundError: org/hibernate/SharedSessionContract
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.apache.kafka.common.utils.Utils.loadClass(Utils.java:435)
+	at org.apache.kafka.common.config.ConfigDef.parseType(ConfigDef.java:769)
+	at org.apache.kafka.common.config.ConfigDef.parseValue(ConfigDef.java:531)
+	at org.apache.kafka.common.config.ConfigDef.parse(ConfigDef.java:524)
+	at org.apache.kafka.common.config.AbstractConfig.<init>(AbstractConfig.java:115)
+	at org.apache.kafka.common.config.AbstractConfig.<init>(AbstractConfig.java:146)
+	at org.apache.kafka.connect.runtime.TaskConfig.<init>(TaskConfig.java:51)
+	at org.apache.kafka.connect.runtime.Worker.startTask(Worker.java:662)
+	at org.apache.kafka.connect.runtime.Worker.startSinkTask(Worker.java:569)
+	at org.apache.kafka.connect.runtime.distributed.DistributedHerder.startTask(DistributedHerder.java:2026)
+	at org.apache.kafka.connect.runtime.distributed.DistributedHerder.lambda$getTaskStartingCallable$40(DistributedHerder.java:2076)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.ClassNotFoundException: org.hibernate.SharedSessionContract
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:592)
+	at org.apache.kafka.connect.runtime.isolation.PluginClassLoader.loadClass(PluginClassLoader.java:124)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 17 more
+[2024-12-16 19:41:36,181] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2008)
+[2024-12-16 19:41:36,183] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:243)
+[2024-12-16 19:41:36,183] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] (Re-)joining group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:605)
+[2024-12-16 19:41:36,191] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully joined group with generation Generation{generationId=252, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:666)
+[2024-12-16 19:41:36,195] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully synced group in generation Generation{generationId=252, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:843)
+[2024-12-16 19:41:36,196] WARN [mysql-sink-connector|task-0] Ignoring stop request for unowned task mysql-sink-connector-0 (org.apache.kafka.connect.runtime.Worker:1044)
+[2024-12-16 19:41:36,197] WARN [mysql-sink-connector|task-0] Ignoring await stop request for non-present task mysql-sink-connector-0 (org.apache.kafka.connect.runtime.Worker:1070)
+[2024-12-16 19:41:36,198] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished stopping tasks in preparation for rebalance (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2735)
+[2024-12-16 19:41:36,198] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished flushing status backing store in preparation for rebalance (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2756)
+[2024-12-16 19:41:36,199] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Joined group at generation 252 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', leaderUrl='http://172.30.2.147:8083/', offset=406, connectorIds=[mysql-sink-connector, mongodb-source-connector], taskIds=[mongodb-source-connector-0], revokedConnectorIds=[], revokedTaskIds=[mysql-sink-connector-0], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2648)
+[2024-12-16 19:41:36,200] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting connectors and tasks using config offset 406 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1979)
+[2024-12-16 19:41:36,201] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2008)
+[2024-12-16 19:41:36,202] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:243)
+[2024-12-16 19:41:36,202] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] (Re-)joining group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:605)
+[2024-12-16 19:41:36,207] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully joined group with generation Generation{generationId=253, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:666)
+[2024-12-16 19:41:36,211] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully synced group in generation Generation{generationId=253, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:843)
+[2024-12-16 19:41:36,212] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Joined group at generation 253 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', leaderUrl='http://172.30.2.147:8083/', offset=406, connectorIds=[mysql-sink-connector, mongodb-source-connector], taskIds=[mongodb-source-connector-0], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2648)
+[2024-12-16 19:41:36,212] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting connectors and tasks using config offset 406 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1979)
+[2024-12-16 19:41:36,213] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2008)
+[2024-12-16 19:42:31,217] INFO Successfully processed removal of connector 'mysql-sink-connector' (org.apache.kafka.connect.storage.KafkaConfigBackingStore:1005)
+[2024-12-16 19:42:31,219] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Connector mysql-sink-connector config removed (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2432)
+[2024-12-16 19:42:31,236] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:243)
+[2024-12-16 19:42:31,237] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] (Re-)joining group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:605)
+[2024-12-16 19:42:31,241] INFO 172.30.2.207 - - [16/Dec/2024:12:42:31 +0000] "DELETE /connectors/mysql-sink-connector HTTP/1.1" 204 0 "-" "curl/7.81.0" 67 (org.apache.kafka.connect.runtime.rest.RestServer:62)
+[2024-12-16 19:42:31,251] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully joined group with generation Generation{generationId=254, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:666)
+[2024-12-16 19:42:31,263] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully synced group in generation Generation{generationId=254, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:843)
+[2024-12-16 19:42:31,264] INFO [mysql-sink-connector|worker] Stopping connector mysql-sink-connector (org.apache.kafka.connect.runtime.Worker:452)
+[2024-12-16 19:42:31,265] INFO [mysql-sink-connector|worker] Scheduled shutdown for WorkerConnector{id=mysql-sink-connector} (org.apache.kafka.connect.runtime.WorkerConnector:295)
+[2024-12-16 19:42:31,268] INFO [mysql-sink-connector|worker] Completed shutdown for WorkerConnector{id=mysql-sink-connector} (org.apache.kafka.connect.runtime.WorkerConnector:315)
+[2024-12-16 19:42:31,270] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished stopping tasks in preparation for rebalance (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2735)
+[2024-12-16 19:42:31,274] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished flushing status backing store in preparation for rebalance (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2756)
+[2024-12-16 19:42:31,275] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Joined group at generation 254 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', leaderUrl='http://172.30.2.147:8083/', offset=408, connectorIds=[mongodb-source-connector], taskIds=[mongodb-source-connector-0], revokedConnectorIds=[mysql-sink-connector], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2648)
+[2024-12-16 19:42:31,276] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting connectors and tasks using config offset 408 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1979)
+[2024-12-16 19:42:31,277] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2008)
+[2024-12-16 19:42:31,277] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:243)
+[2024-12-16 19:42:31,277] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] (Re-)joining group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:605)
+[2024-12-16 19:42:31,282] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully joined group with generation Generation{generationId=255, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:666)
+[2024-12-16 19:42:31,299] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully synced group in generation Generation{generationId=255, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:843)
+[2024-12-16 19:42:31,300] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Joined group at generation 255 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', leaderUrl='http://172.30.2.147:8083/', offset=408, connectorIds=[mongodb-source-connector], taskIds=[mongodb-source-connector-0], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2648)
+[2024-12-16 19:42:31,300] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting connectors and tasks using config offset 408 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1979)
+[2024-12-16 19:42:31,301] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2008)
+[2024-12-16 19:45:10,722] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Connector mysql-sink-connector config updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2448)
+[2024-12-16 19:45:10,726] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:243)
+[2024-12-16 19:45:10,727] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] (Re-)joining group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:605)
+[2024-12-16 19:45:10,737] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully joined group with generation Generation{generationId=256, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:666)
+[2024-12-16 19:45:10,758] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully synced group in generation Generation{generationId=256, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:843)
+[2024-12-16 19:45:10,759] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Joined group at generation 256 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', leaderUrl='http://172.30.2.147:8083/', offset=409, connectorIds=[mysql-sink-connector, mongodb-source-connector], taskIds=[mongodb-source-connector-0], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2648)
+[2024-12-16 19:45:10,761] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting connectors and tasks using config offset 409 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1979)
+[2024-12-16 19:45:10,762] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting connector mysql-sink-connector (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2097)
+[2024-12-16 19:45:10,765] INFO [mysql-sink-connector|worker] Creating connector mysql-sink-connector of type io.debezium.connector.jdbc.JdbcSinkConnector (org.apache.kafka.connect.runtime.Worker:313)
+[2024-12-16 19:45:10,769] INFO [mysql-sink-connector|worker] SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	name = mysql-sink-connector
+	predicates = []
+	tasks.max = 1
+	tasks.max.enforce = true
+	topics = [fullfillment.test.customers]
+	topics.regex = 
+	transforms = [unwrap]
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:371)
+[2024-12-16 19:45:10,779] INFO [mysql-sink-connector|worker] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	name = mysql-sink-connector
+	predicates = []
+	tasks.max = 1
+	tasks.max.enforce = true
+	topics = [fullfillment.test.customers]
+	topics.regex = 
+	transforms = [unwrap]
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = true
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field = 
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:371)
+[2024-12-16 19:45:10,793] INFO [mysql-sink-connector|worker] Instantiated connector mysql-sink-connector with version 3.0.4.Final of type class io.debezium.connector.jdbc.JdbcSinkConnector (org.apache.kafka.connect.runtime.Worker:335)
+[2024-12-16 19:45:10,795] INFO [mysql-sink-connector|worker] Finished creating connector mysql-sink-connector (org.apache.kafka.connect.runtime.Worker:356)
+[2024-12-16 19:45:10,796] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2008)
+[2024-12-16 19:45:10,803] INFO SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	name = mysql-sink-connector
+	predicates = []
+	tasks.max = 1
+	tasks.max.enforce = true
+	topics = [fullfillment.test.customers]
+	topics.regex = 
+	transforms = [unwrap]
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:371)
+[2024-12-16 19:45:10,810] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	name = mysql-sink-connector
+	predicates = []
+	tasks.max = 1
+	tasks.max.enforce = true
+	topics = [fullfillment.test.customers]
+	topics.regex = 
+	transforms = [unwrap]
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = true
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field = 
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:371)
+[2024-12-16 19:45:10,846] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Tasks [mysql-sink-connector-0] configs updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2467)
+[2024-12-16 19:45:10,881] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Tasks [mysql-sink-connector-0] configs updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2467)
+[2024-12-16 19:45:10,882] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:243)
+[2024-12-16 19:45:10,882] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] (Re-)joining group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:605)
+[2024-12-16 19:45:10,886] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully joined group with generation Generation{generationId=257, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:666)
+[2024-12-16 19:45:10,891] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully synced group in generation Generation{generationId=257, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:843)
+[2024-12-16 19:45:10,891] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Joined group at generation 257 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', leaderUrl='http://172.30.2.147:8083/', offset=413, connectorIds=[mysql-sink-connector, mongodb-source-connector], taskIds=[mysql-sink-connector-0, mongodb-source-connector-0], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2648)
+[2024-12-16 19:45:10,892] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting connectors and tasks using config offset 413 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1979)
+[2024-12-16 19:45:10,893] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting task mysql-sink-connector-0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2022)
+[2024-12-16 19:45:10,894] INFO [mysql-sink-connector|task-0] Creating task mysql-sink-connector-0 (org.apache.kafka.connect.runtime.Worker:646)
+[2024-12-16 19:45:10,904] INFO [mysql-sink-connector|task-0] ConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.jdbc.JdbcSinkConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	name = mysql-sink-connector
+	predicates = []
+	tasks.max = 1
+	tasks.max.enforce = true
+	transforms = [unwrap]
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.ConnectorConfig:371)
+[2024-12-16 19:45:10,910] INFO [mysql-sink-connector|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.jdbc.JdbcSinkConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	name = mysql-sink-connector
+	predicates = []
+	tasks.max = 1
+	tasks.max.enforce = true
+	transforms = [unwrap]
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = true
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field = 
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:371)
+[2024-12-16 19:45:10,945] ERROR [mysql-sink-connector|task-0] Failed to start task mysql-sink-connector-0 (org.apache.kafka.connect.runtime.Worker:707)
+java.lang.NoClassDefFoundError: org/hibernate/SharedSessionContract
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.apache.kafka.common.utils.Utils.loadClass(Utils.java:435)
+	at org.apache.kafka.common.config.ConfigDef.parseType(ConfigDef.java:769)
+	at org.apache.kafka.common.config.ConfigDef.parseValue(ConfigDef.java:531)
+	at org.apache.kafka.common.config.ConfigDef.parse(ConfigDef.java:524)
+	at org.apache.kafka.common.config.AbstractConfig.<init>(AbstractConfig.java:115)
+	at org.apache.kafka.common.config.AbstractConfig.<init>(AbstractConfig.java:146)
+	at org.apache.kafka.connect.runtime.TaskConfig.<init>(TaskConfig.java:51)
+	at org.apache.kafka.connect.runtime.Worker.startTask(Worker.java:662)
+	at org.apache.kafka.connect.runtime.Worker.startSinkTask(Worker.java:569)
+	at org.apache.kafka.connect.runtime.distributed.DistributedHerder.startTask(DistributedHerder.java:2026)
+	at org.apache.kafka.connect.runtime.distributed.DistributedHerder.lambda$getTaskStartingCallable$40(DistributedHerder.java:2076)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.ClassNotFoundException: org.hibernate.SharedSessionContract
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:592)
+	at org.apache.kafka.connect.runtime.isolation.PluginClassLoader.loadClass(PluginClassLoader.java:124)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 17 more
+[2024-12-16 19:45:10,956] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2008)
+[2024-12-16 19:54:59,395] INFO Successfully processed removal of connector 'mysql-sink-connector' (org.apache.kafka.connect.storage.KafkaConfigBackingStore:1005)
+[2024-12-16 19:54:59,397] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Connector mysql-sink-connector config removed (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2432)
+[2024-12-16 19:54:59,412] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:243)
+[2024-12-16 19:54:59,412] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] (Re-)joining group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:605)
+[2024-12-16 19:54:59,416] INFO 172.30.2.207 - - [16/Dec/2024:12:54:59 +0000] "DELETE /connectors/mysql-sink-connector HTTP/1.1" 204 0 "-" "curl/7.81.0" 61 (org.apache.kafka.connect.runtime.rest.RestServer:62)
+[2024-12-16 19:54:59,426] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully joined group with generation Generation{generationId=258, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:666)
+[2024-12-16 19:54:59,432] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully synced group in generation Generation{generationId=258, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:843)
+[2024-12-16 19:54:59,433] INFO [mysql-sink-connector|worker] Stopping connector mysql-sink-connector (org.apache.kafka.connect.runtime.Worker:452)
+[2024-12-16 19:54:59,434] WARN [mysql-sink-connector|task-0] Ignoring stop request for unowned task mysql-sink-connector-0 (org.apache.kafka.connect.runtime.Worker:1044)
+[2024-12-16 19:54:59,434] INFO [mysql-sink-connector|worker] Scheduled shutdown for WorkerConnector{id=mysql-sink-connector} (org.apache.kafka.connect.runtime.WorkerConnector:295)
+[2024-12-16 19:54:59,435] WARN [mysql-sink-connector|task-0] Ignoring await stop request for non-present task mysql-sink-connector-0 (org.apache.kafka.connect.runtime.Worker:1070)
+[2024-12-16 19:54:59,441] INFO [mysql-sink-connector|worker] Completed shutdown for WorkerConnector{id=mysql-sink-connector} (org.apache.kafka.connect.runtime.WorkerConnector:315)
+[2024-12-16 19:54:59,444] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished stopping tasks in preparation for rebalance (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2735)
+[2024-12-16 19:54:59,460] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished flushing status backing store in preparation for rebalance (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2756)
+[2024-12-16 19:54:59,461] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Joined group at generation 258 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', leaderUrl='http://172.30.2.147:8083/', offset=415, connectorIds=[mongodb-source-connector], taskIds=[mongodb-source-connector-0], revokedConnectorIds=[mysql-sink-connector], revokedTaskIds=[mysql-sink-connector-0], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2648)
+[2024-12-16 19:54:59,464] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting connectors and tasks using config offset 415 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1979)
+[2024-12-16 19:54:59,465] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2008)
+[2024-12-16 19:54:59,467] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:243)
+[2024-12-16 19:54:59,467] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] (Re-)joining group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:605)
+[2024-12-16 19:54:59,476] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully joined group with generation Generation{generationId=259, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:666)
+[2024-12-16 19:54:59,486] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully synced group in generation Generation{generationId=259, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:843)
+[2024-12-16 19:54:59,487] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Joined group at generation 259 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', leaderUrl='http://172.30.2.147:8083/', offset=415, connectorIds=[mongodb-source-connector], taskIds=[mongodb-source-connector-0], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2648)
+[2024-12-16 19:54:59,488] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting connectors and tasks using config offset 415 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1979)
+[2024-12-16 19:54:59,488] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2008)
+[2024-12-16 19:55:02,400] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Connector mysql-sink-connector config updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2448)
+[2024-12-16 19:55:02,404] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:243)
+[2024-12-16 19:55:02,405] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] (Re-)joining group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:605)
+[2024-12-16 19:55:02,414] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully joined group with generation Generation{generationId=260, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:666)
+[2024-12-16 19:55:02,423] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully synced group in generation Generation{generationId=260, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:843)
+[2024-12-16 19:55:02,425] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Joined group at generation 260 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', leaderUrl='http://172.30.2.147:8083/', offset=416, connectorIds=[mysql-sink-connector, mongodb-source-connector], taskIds=[mongodb-source-connector-0], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2648)
+[2024-12-16 19:55:02,426] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting connectors and tasks using config offset 416 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1979)
+[2024-12-16 19:55:02,428] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting connector mysql-sink-connector (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2097)
+[2024-12-16 19:55:02,430] INFO [mysql-sink-connector|worker] Creating connector mysql-sink-connector of type io.debezium.connector.jdbc.JdbcSinkConnector (org.apache.kafka.connect.runtime.Worker:313)
+[2024-12-16 19:55:02,442] INFO [mysql-sink-connector|worker] SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	name = mysql-sink-connector
+	predicates = []
+	tasks.max = 1
+	tasks.max.enforce = true
+	topics = [fullfillment.test.customers]
+	topics.regex = 
+	transforms = [unwrap]
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:371)
+[2024-12-16 19:55:02,461] INFO [mysql-sink-connector|worker] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	name = mysql-sink-connector
+	predicates = []
+	tasks.max = 1
+	tasks.max.enforce = true
+	topics = [fullfillment.test.customers]
+	topics.regex = 
+	transforms = [unwrap]
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = true
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field = 
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:371)
+[2024-12-16 19:55:02,478] INFO [mysql-sink-connector|worker] Instantiated connector mysql-sink-connector with version 3.0.4.Final of type class io.debezium.connector.jdbc.JdbcSinkConnector (org.apache.kafka.connect.runtime.Worker:335)
+[2024-12-16 19:55:02,479] INFO [mysql-sink-connector|worker] Finished creating connector mysql-sink-connector (org.apache.kafka.connect.runtime.Worker:356)
+[2024-12-16 19:55:02,485] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2008)
+[2024-12-16 19:55:02,489] INFO SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	name = mysql-sink-connector
+	predicates = []
+	tasks.max = 1
+	tasks.max.enforce = true
+	topics = [fullfillment.test.customers]
+	topics.regex = 
+	transforms = [unwrap]
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:371)
+[2024-12-16 19:55:02,501] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	name = mysql-sink-connector
+	predicates = []
+	tasks.max = 1
+	tasks.max.enforce = true
+	topics = [fullfillment.test.customers]
+	topics.regex = 
+	transforms = [unwrap]
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = true
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field = 
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:371)
+[2024-12-16 19:55:02,521] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Tasks [mysql-sink-connector-0] configs updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2467)
+[2024-12-16 19:55:02,538] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Tasks [mysql-sink-connector-0] configs updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2467)
+[2024-12-16 19:55:02,543] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:243)
+[2024-12-16 19:55:02,543] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] (Re-)joining group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:605)
+[2024-12-16 19:55:02,549] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully joined group with generation Generation{generationId=261, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:666)
+[2024-12-16 19:55:02,555] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Successfully synced group in generation Generation{generationId=261, memberId='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:843)
+[2024-12-16 19:55:02,556] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Joined group at generation 261 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.30.2.147:8083-f57c66f8-f42c-4f98-9089-a6a91f5635e5', leaderUrl='http://172.30.2.147:8083/', offset=420, connectorIds=[mysql-sink-connector, mongodb-source-connector], taskIds=[mysql-sink-connector-0, mongodb-source-connector-0], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2648)
+[2024-12-16 19:55:02,557] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting connectors and tasks using config offset 420 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1979)
+[2024-12-16 19:55:02,557] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Starting task mysql-sink-connector-0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2022)
+[2024-12-16 19:55:02,558] INFO [mysql-sink-connector|task-0] Creating task mysql-sink-connector-0 (org.apache.kafka.connect.runtime.Worker:646)
+[2024-12-16 19:55:02,561] INFO [mysql-sink-connector|task-0] ConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.jdbc.JdbcSinkConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	name = mysql-sink-connector
+	predicates = []
+	tasks.max = 1
+	tasks.max.enforce = true
+	transforms = [unwrap]
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.ConnectorConfig:371)
+[2024-12-16 19:55:02,565] INFO [mysql-sink-connector|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.jdbc.JdbcSinkConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	name = mysql-sink-connector
+	predicates = []
+	tasks.max = 1
+	tasks.max.enforce = true
+	transforms = [unwrap]
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = true
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field = 
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:371)
+[2024-12-16 19:55:02,574] ERROR [mysql-sink-connector|task-0] Failed to start task mysql-sink-connector-0 (org.apache.kafka.connect.runtime.Worker:707)
+java.lang.NoClassDefFoundError: org/hibernate/SharedSessionContract
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.apache.kafka.common.utils.Utils.loadClass(Utils.java:435)
+	at org.apache.kafka.common.config.ConfigDef.parseType(ConfigDef.java:769)
+	at org.apache.kafka.common.config.ConfigDef.parseValue(ConfigDef.java:531)
+	at org.apache.kafka.common.config.ConfigDef.parse(ConfigDef.java:524)
+	at org.apache.kafka.common.config.AbstractConfig.<init>(AbstractConfig.java:115)
+	at org.apache.kafka.common.config.AbstractConfig.<init>(AbstractConfig.java:146)
+	at org.apache.kafka.connect.runtime.TaskConfig.<init>(TaskConfig.java:51)
+	at org.apache.kafka.connect.runtime.Worker.startTask(Worker.java:662)
+	at org.apache.kafka.connect.runtime.Worker.startSinkTask(Worker.java:569)
+	at org.apache.kafka.connect.runtime.distributed.DistributedHerder.startTask(DistributedHerder.java:2026)
+	at org.apache.kafka.connect.runtime.distributed.DistributedHerder.lambda$getTaskStartingCallable$40(DistributedHerder.java:2076)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.ClassNotFoundException: org.hibernate.SharedSessionContract
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:592)
+	at org.apache.kafka.connect.runtime.isolation.PluginClassLoader.loadClass(PluginClassLoader.java:124)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 17 more
+[2024-12-16 19:55:02,587] INFO [Worker clientId=connect-172.30.2.147:8083, groupId=mongo-source-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2008)

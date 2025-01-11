@@ -1,0 +1,1 @@
+[2024-12-16 19:31:49,882] INFO Invalid session 0x100001c280f0008 for client /172.30.0.4:55636, probably expired (org.apache.zookeeper.server.ZooKeeperServer)

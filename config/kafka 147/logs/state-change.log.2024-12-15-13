@@ -1,0 +1,1 @@
+[2024-12-15 13:13:02,744] INFO [Broker id=1] Add 82 partitions and deleted 0 partitions from metadata cache in response to UpdateMetadata request sent by controller 0 epoch 2 with correlation id 0 (state.change.logger)
