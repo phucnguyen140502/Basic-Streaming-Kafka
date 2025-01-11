@@ -1,6 +1,7 @@
 # Real-Time Data Synchronization Pipeline
 
-![image](https://github.com/user-attachments/assets/68a052af-fc37-48ee-8f02-01b7b8263ce4)
+![image](https://github.com/user-attachments/assets/e789f7da-7659-4346-b270-8847e86d1f03)
+
 
 ### **Goal**
 Establish a **basic real-time data synchronization pipeline** between **MongoDB** and **MySQL**, ensuring seamless and efficient data replication across distributed systems.
